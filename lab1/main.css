@@ -1,0 +1,111 @@
+body {
+	background: #ccc;
+	font-family:  Arial, sans-serif;
+	width: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wallpaper {
+	display: flex;
+	justify-content: space-around;
+}
+
+.container {
+	margin: 0 auto;
+	width: 85%;
+}
+
+header.header {
+	background: #115;
+	display: block;
+	padding: 35px 0;
+}
+
+.header ul {
+	width: 100%;
+}
+
+.header ul li {
+	display: inline-block;
+	margin: 2px 10px;
+}
+
+.header ul li a {
+	background: none;
+	color: gold;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 7px 12px;
+}
+
+#page .content {
+	height: 82vh;
+}
+
+.content .block1 {
+	background: url(https://wallpaperaccess.com/full/1108014.jpg) no-repeat center padding-box;
+	color: whitesmoke;
+	display: flex;
+	height: 68vh;
+}
+
+.content .block1 .text {
+	background: rgba(0, 0, 0, 0.6);
+	margin-top: 180px;
+	padding: 12px 0;
+}
+
+.content .block1 h1 {
+	display: block;
+	padding: 10px;
+	text-align: center;
+}
+
+.content .block1 p {
+	display: block;
+	font-size: 16px;
+	margin: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+.content .block2 {
+	background: #b85f6f;
+	margin: 10px 0;
+}
+
+.content .block2 .line {
+	background: rgba(234, 123, 151, 0.7);
+	display: inline-block;
+	margin: 0 10px;
+	width: 75px;
+}
+
+.content .block2 .text {
+	display: inline-block;
+}
+
+.content .block2 p {
+	font-size: 16px;
+}
+
+.footer {
+	background: #115;
+	display: block;
+	padding: 35px 0;
+	text-align: center;
+}
+
+.footer p {
+	color: darkred;
+	font-size: 20px;
+	fon-went: 900;
+}
