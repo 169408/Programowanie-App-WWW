@@ -29,6 +29,11 @@ a {
 	justify-content: space-around;
 }
 
+.menu .wallpaper {
+	flex-wrap: wrap;
+}
+
+
 .container {
 	margin: 0 auto;
 	width: 85%;
@@ -120,6 +125,17 @@ header.header {
 .header ul li a.active {
 	background: orange !important;
 	color: black !important;
+}
+
+.header .dataczas {
+	padding: 1px;
+	text-align: center;
+}
+
+.header .dataczas a {
+	color: black;
+	font-size: 12px;
+	font-weight: bold;
 }
 
 #page .content {
@@ -395,6 +411,20 @@ header.header {
 
 .list_projects p {
 	font-size: 18px;
+}
+
+.form_bg {
+	padding: 10px 40px;
+	text-align: center;
+}
+
+.form_bg p {
+	margin: 15px 0;
+}
+
+.form_bg input {
+	font-size: 20px;
+	padding: 5px 12px;
 }
 
 

@@ -18,8 +18,10 @@
 					<li><a href="records.html">Records</a></li>
 					<li><a href="contact.html">Contact</a></li>
 					<li><a href="another.html">Another projects</a></li>
-					<div id="zegarek">kl</div>
-					<div id="data"></div>
+					<div class="dataczas">
+						<a href="https://www.timeanddate.com/worldclock/poland"><div id="zegarek"></div>
+						<div id="data"></div></a>
+					</div>
 				</div>
 			</ul>
 		</header>
@@ -58,24 +60,16 @@
 				</div>
 			</div>
 		</div>
-		<form action="" name="background" method="POST">
-			<input type="button" name="zolty" value="zolty" onclick="changeBackground('#FFF000')" />
-			<input type="button" name="czarny" value="czarny" onclick="changeBackground('#000')" />
-			<input type="button" name="bialy" value="bialy" onclick="changeBackground('#FFF')" />
-			<input type="button" name="zielony" value="zielony" onclick="changeBackground('#00FF00')" />
-			<input type="button" name="niebieski" value="niebieski" onclick="changeBackground('#0000FF')" />
-			<input type="button" name="pomaranczowy" value="pomaranczowy" onclick="changeBackground('#FF8000')" />
-			<input type="button" name="szary" value="szary" onclick="changeBackground('#c0c0c0')" />
-			<input type="button" name="niebieski" value="niebieski" onclick="changeBackground('#F00')" />
+		<form class="form_bg" action="" name="background" method="POST">
+			<p>Change background?</p>
+			<input type="button" name="Play" value="Play" onclick="play()" />
 			<input type="button" name="Stop" value="Stop" onclick="stop()" />
 		</form>
-		<div id="zegarek"></div>
-		<div id="data"></div>
+		<button style="background: red; color: black; font-size: 22px; margin: 10px auto; text-aling: center; width: 10%" type="button" name="openVothcom" value="openVothcom" onclick="openVothcom()" />Tokyo Ghoul</button>
 		<footer class="footer">
 			<p>RISINGRAY &copy; 2024</p>
 		</footer>
 	</div>
-
 	<script src="scripts/script"></script>
 	<script src="scripts/kolorujtlo.js"></script>
 </body>
