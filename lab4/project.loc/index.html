@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Language" content="pl" />
+	<meta name="Author" content="Ruslan Zhukotynskyi" />
+	<link rel="stylesheet" href="css/main.css" />
+	<title>Moje hobby to Workout</title>
+	<script src="scripts/timedate.js" type="text/javascript"></script>
+	<script src="scripts/jquery-3.7.1.min.js"></script>
+</head>
+<body onload="startclock()">
+	<div id="page">
+		<header class="header">
+			<ul class="menu">
+				<div class="wallpaper">
+					<li><a class="active" href="#">Home</a></li>
+					<li><a href="views/about.html">About</a></li>
+					<li><a href="views/success.html">History of success</a></li>
+					<li><a href="views/records.html">Records</a></li>
+					<li><a href="views/contact.html">Contact</a></li>
+					<li><a href="views/another.html">Another projects</a></li>
+					<div class="dataczas">
+						<a href="https://www.timeanddate.com/worldclock/poland"><div id="zegarek"></div>
+						<div id="data"></div></a>
+					</div>
+				</div>
+			</ul>
+		</header>
+		<div class="content">
+			<div class="block1">
+				<div class="container">
+					<div class="text">
+						<h1>Welcome to my Hobby Page</h1>
+						<p>Opowiem trochę o tym, jak parę zajęć na silowni zewnętrznej przeszli do mojego codziennego działania. :)</p>
+					</div>
+				</div>
+			</div>
+			<div class="block2">
+				<div class="container wallpaper">
+					<div class="line"></div>
+					<div class="text">
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Excepturi, magni ea atque iusto vel nam eligendi laudantium, debitis illum tenetur perferendis perspiciatis reprehenderit dolores sint sapiente quo assumenda sequi distinctio.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti cumque, illo eum quaerat exercitationem magnam blanditiis dolore! Soluta a delectus sunt ipsam aut beatae voluptatibus nesciunt ut laboriosam dolorum.</p>
+					</div>
+				</div>
+			</div>
+			<div style="background: none;" class="block2">
+				<div style="flex-wrap: wrap;" class="container wallpaper">
+					<img src="uploads/photo1.jpg" alt="photo1" />
+					<img src="uploads/photo2.jpg" alt="photo2" />
+					<div style="margin: 20px 10px 30px;" class="text">
+						<p style="color: blue; display: inline-block; font-size: 17px; width: 1100px;">
+							W dzisiejszych czasach ćwiczenia na drążkach zyskują coraz większą popularność, zarówno wśród osób, które trenują siłowo, jak i tych, które uprawiają gimnastykę sportową. Drążki to prosty, ale skuteczny sposób na wzmocnienie mięśni górnej części ciała, zwłaszcza ramion, pleców i brzucha. Wielu ludzi wybiera je do ćwiczeń, ponieważ można z łatwością wykonywać różne warianty podciągnięć oraz elementy gimnastyczne, takie jak muscle-upy, front lever czy back lever. Wzrost liczby zewnętrznych parków do street workoutu dodatkowo ułatwia dostęp do drążków.</p>
+							<form action="POST">
+								<input type="text" name="you" placeholder="tell me why not?" />
+								<button type="submit" name="subscribe" value="sub">Subscribe</button>
+							</form>
+							<p><i>Drążki stają się częścią wielu publicznych siłowni na świeżym powietrzu, co jeszcze bardziej ułatwia dostęp do tego typu treningu i przyciąga nowych entuzjastów sportu. </i>
+							</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<form class="form_bg" action="" name="background" method="POST">
+			<p>Change background?</p>
+			<input type="button" name="Play" value="Play" onclick="play()" />
+			<input type="button" name="Stop" value="Stop" onclick="stop()" />
+		</form>
+		<button style="background: red; color: black; font-size: 22px; margin: 10px auto; text-aling: center; width: 10%" type="button" name="openVothcom" value="openVothcom" onclick="openVothcom()" />Tokyo Ghoul</button>
+		<footer class="footer">
+			<p>RISINGRAY &copy; 2024</p>
+		</footer>
+	</div>
+	<script src="scripts/script.js"></script>
+	<script src="scripts/kolorujtlo.js"></script>
+</body>
+</html>
