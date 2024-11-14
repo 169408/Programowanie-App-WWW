@@ -41,7 +41,7 @@ $web = show_page($_GET['idp'], $link);
 			</ul>
 		</header>
         <?php
-            include ("views/{$web}");
+            echo $web;
         ?>
         <footer class="footer">
 			<p>RISINGRAY &copy; 2024</p>
