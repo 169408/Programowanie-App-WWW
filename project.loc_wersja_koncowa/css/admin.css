@@ -1,0 +1,501 @@
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.container-full {
+    width: 100%;
+}
+
+.default-width {
+    width: 20%;
+}
+
+.full-width {
+    width: 80%;
+}
+
+/* ------------------Admin formularz logowania -------------------------*/
+
+.login {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 40px 60px;
+    text-align: center;
+    width: 100%;
+}
+
+.heading {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.login form p {
+    color: #555;
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+
+.login form input[type="text"],
+.login form input[type="password"] {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 70%;
+}
+
+.login form input[type="text"]:focus,
+.login form input[type="password"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.login button {
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.login button:hover {
+    background-color: #0056b3;
+}
+
+.login a {
+    color: #007BFF;
+    display: block;
+    font-size: 14px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------Admin narzędzie CMS -------------------------*/
+
+header {
+    background-color: #4af3f2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.admin_board {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.admin_board .center_content {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.admin_board a {
+    background-color: #4af3f2;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 320px;
+}
+
+.admin_board .center_content {
+    width: 95%;
+}
+
+.admin_board .center_content a {
+    margin: 10px auto;
+    width: 86%;
+}
+
+.admin_board p {
+    overflow: hidden;
+}
+
+.admin_board a:hover {
+    background-color: #3abec1;
+}
+
+.admin_board p {
+    color: #666;
+    font-style: italic;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* ------------------Admin wyświetlenie dannych z tabel w bd -------------------------*/
+
+.admin_board .pages_controller, .category_controller, .product_controller {
+    padding: 40px 10px;
+}
+
+.admin_board table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.admin_board table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.admin_board table th {
+    background-color: #4af3f2;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.admin_board table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.admin_board table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.admin_board table td {
+    vertical-align: middle;
+}
+
+/* Buttons */
+.admin_board button {
+    background-color: #4caf50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.admin_board button:hover {
+    background-color: #45a049;
+}
+
+/* Buttons for delete */
+.admin_board button[name="action_page"][value="delete"], button[name="action_category"][value="delete"], button[name="action_product"][value="delete"] {
+    background-color: #f44336;
+}
+
+.admin_board button[name="action_page"][value="delete"]:hover, button[name="action_category"][value="delete"]:hover, button[name="action_product"][value="delete"]:hover {
+    background-color: #e53935;
+}
+
+/* Button "add new page" */
+.admin_board form[action="admin/show_form.php"] button[name="action_page"][value="add"], button[name="action_category"][value="add"], button[name="action_product"][value="add"] {
+    background-color: #2196f3;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.admin_board form[action="admin/show_form.php"] button[name="action_page"][value="add"]:hover, button[name="action_category"][value="add"]:hover, button[name="action_product"][value="add"]:hover {
+    background-color: #1976d2;
+}
+
+.admin_board .category_controller .category_block {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.admin_board .category_controller .category_block .category_name {
+    font-size: 17px;
+    margin: auto 2px;
+    text-align: left;
+}
+
+.admin_board .category_controller .category_block .action_forms {
+    display: inline-block;
+    margin: auto 0;
+}
+
+.admin_board .category_controller .category_block .action_forms form {
+    padding: 2px;
+}
+
+.admin_board .product_controller h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.admin_board .product_controller .table-container {
+    border: 4px solid #000;
+    font-size: 13px;
+    overflow-x: auto;
+}
+
+.admin_board .product_controller table .head_lines {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+/* ----------------- Formularzy CRUD z bd ----------------- */
+
+.form-action {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+}
+
+.form-action h2 {
+    color: #4CAF50;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-action form label {
+    color: #555;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-action form input[type="text"],
+.form-action form textarea,
+.form-action form button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-action form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form-action form button {
+    background: #4CAF50;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-action form button:hover {
+    background: #45a049;
+}
+
+.form-action form a {
+    color: #4CAF50;
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.form-action form a:hover {
+    text-decoration: underline;
+}
+
+.form {
+    background: url("../uploads/shop.jpg") repeat center center;
+    background-size: 120%;
+    display: block;
+    flex: 1;
+}
+
+.form form {
+    background: rgba(40, 40, 40, 0.7);
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    padding: 40px 60px;
+    width: 70%;
+}
+
+.form form h2 {
+    color: gold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.form form label {
+    color: gold;
+    font-size: 19px;
+    margin: 15px 2px 7px;
+}
+
+.form form input {
+    background: black;
+    border: 2px solid #28a745;
+    border-radius: 9px;
+    color: gold;
+    display: block;
+    font-size: 17px;
+    padding: 5px;
+}
+
+.form form button {
+    background: black;
+    border: 2px solid #28a745;
+    border-radius: 9px;
+    color: gold;
+    display: block;
+    font-size: 17px;
+    margin: 10px;
+    padding: 5px;
+    width: 15%;
+}
+
+.back {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.back:active {
+    background-color: #004085;
+    transform: scale(0.95);
+}
+
+/* -------------------- Admin logout -----------------------*/
+
+.logout-admin {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.logout-button {
+    background-color: #ff4d4d !important;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-button:hover {
+    background-color: #e60000 !important;
+    transform: scale(1.05);
+}
+
+.logout-button:active {
+    background-color: #cc0000 !important;
+    transform: scale(0.95);
+}
+
+/* ------------------------------------------------------- */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1100px) {
+    .admin_board a {
+        font-size: 14px;
+        margin: 5px 0;
+        padding: 8px 9px;
+    }
+
+    .admin_board .category_controller .category_block {
+        width: 60%;
+    }
+}
+
+@media (max-width: 900px) {
+    .admin_board .category_controller .category_block {
+        width: 80%;
+    }
+}
+
+@media (max-width: 650px) {
+    .admin_board .category_controller .category_block {
+        font-size: 10px;
+        width: 95%;
+    }
+
+    .admin_board .category_controller .category_block .action_forms button {
+        font-size: 10px;
+        padding: 4px 6px;
+    }
+}
+
+@media (max-width: 600px) {
+    .admin_board a {
+        font-size: 13px;
+        padding: 4px 6px;
+        width: 85%;
+    }
+
+    table th, table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
